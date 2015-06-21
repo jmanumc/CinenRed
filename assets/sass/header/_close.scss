@@ -1,0 +1,17 @@
+body > header > .close-wrapper {
+	position: relative;
+	.close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		background-color: transparent;
+		border: none;
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	body > header > .close-wrapper {
+		display: none;
+	}
+}

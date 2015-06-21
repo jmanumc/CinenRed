@@ -1,0 +1,17 @@
+body > main > header > .header {
+
+	background-image: $bg-image-primary;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	.transparencia {
+		background-color: rgba(0,0,0,0.7);
+	}
+
+}
+
+@import "header/close.scss";
+@import "header/title.scss";
+@import "header/precentacion.scss";
+@import "header/headbar.scss";

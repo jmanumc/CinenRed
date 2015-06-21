@@ -1,0 +1,21 @@
+// Extra Small
+body > main {
+
+	// Desing
+	width: $content-width-xs;
+	margin-left: $content-margin-right-xs;
+
+}
+
+// Large
+@media screen and (min-width: 1200px) {
+	
+	body > main {
+		width: $content-width-lg;
+		margin-left: $content-margin-right-lg;
+	}
+
+}
+
+@import "main/main-header.scss";
+@import "main/main-content.scss";

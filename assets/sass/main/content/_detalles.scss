@@ -1,0 +1,64 @@
+.detalles {
+	
+	.poster {
+		width: 15%;
+		display: inline-block;
+		margin-right: -4px;
+		vertical-align: top;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.info {
+		position: relative;
+		width: 85%;
+		padding: 0px 20px;
+		display: inline-block;
+		margin-right: -4px;
+		vertical-align: top;
+		font-family: "Opensans Regular", sans-serif;
+		font-size: 0.9em;
+
+		.btn-carrito {
+			position: absolute;
+			top: 0px;
+			right: 10px;
+
+			form {
+				button[type=submit] {
+					padding: 10px;
+					color: #FFF;
+					border: none;
+					background-color: $bg-primary;
+				}
+			}
+		}
+
+		.titulo {
+			h1 {
+				margin: 0px;
+				font-family: "Opensans Bold", sans-serif;
+				font-size: 1.6em;
+			}
+		}
+
+		& > div {
+			margin-bottom: 10px;
+		}
+
+		div.header {
+			margin-bottom: 10px;
+			border-bottom: 1px solid #CCC;
+
+			p {
+				margin: 0px;
+				padding-bottom: 5px;
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,54 @@
+// Background
+$bg-primary: #F14440;
+$bg-secondary: #F8555E;
+$bg-image-primary: url(../img/ecommerce.jpg);
+$bg-transparent: rgba(255,255,255,0.0);
+
+// Fonts
+$font-opensans-extrabold: 'Opensans Extrabold', sans-serif;
+$font-opensans-bold: 'Opensans Bold', sans-serif;
+$font-opensans-regular: 'Opensans Regular', sans-serif;
+$font-opensans-light: 'Opensans Light', sans-serif;
+$font-secondary: 'Pacifico', cursive;
+
+// h1, h2, h3, h4, h5, h6
+$h-font-weight: 300;
+
+// Header
+$header-left-lg: 0px;
+$header-left-xs: -100%;
+
+$header-width-lg: 20%;
+$header-width-md: 30%;
+$header-width-sm: 40%;
+$header-width-xs: 80%;
+
+$header-background-color: #FFF;
+$header-box-shadow: 1px 0px 10px 1px rgba(0,0,0,0.5);
+
+	// Headbar
+	$headbar-padding: 10px;
+
+		// Headbar-btn
+		$headbar-btn-padding: 5px;
+		$headbar-btn-color: #000;
+		$headbar-btn-background-color: $bg-transparent;
+
+	// Logo
+	$logo-width: 150px;
+	$logo-padding-lg: 10px;
+
+	// Nav Vertical
+	$nav-vertical-padding: 15px 10%;
+	$nav-vertical-color: #666;
+	$nav-vertical-color-hover: #FFF;
+	$nav-vertical-background-color-hover: $bg-primary;
+
+	$nav-vertical-submenu-padding-left: 20%;
+
+// Content
+$content-width-lg: 100% - $header-width-lg;
+$content-width-xs: 100%;
+
+$content-margin-right-lg: $header-width-lg;
+$content-margin-right-xs: 0px;

@@ -1,0 +1,82 @@
+body > header > .accordion-wrapper {
+	
+	ul {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+
+	.accordion {
+		
+		.link {
+			cursor: pointer;
+			position: relative;
+			display: block;
+			padding: 15px 15px 15px 42px;
+			text-decoration: none;
+			color: #4D4D4D;
+			font-family: "Opensans Regular", sans-serif;
+			-webkit-transition: all 0.4s ease;
+			-o-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+		}
+
+		li {
+
+			i {
+				position: absolute;
+				top: 16px;
+				left: 12px;
+				font-size: 18px;
+				color: #595959;
+				-webkit-transition: all 0.4s ease;
+				-o-transition: all 0.4s ease;
+				transition: all 0.4s ease;
+			}
+
+			i.fa-chevron-down {
+				right: 12px;
+				left: auto;
+				font-size: 16px;
+			}
+
+			&.open .link, &.open i  {
+				color: $bg-primary;
+			}
+
+			&.open i.fa-chevron-down {
+				-moz-transform: rotate(180deg);
+				-webkit-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
+
+		}
+
+		// SUBMENU
+		.submenu {
+			display: none;
+			font-size: 14px;
+
+			a {
+				display: block;
+				text-decoration: none;
+				color: #4D4D4D;
+				padding: 12px;
+				padding-left: 45px;
+				font-family: "Opensans Regular", sans-serif;
+				-webkit-transition: all 0.1s ease;
+				-o-transition: all 0.1s ease;
+				transition: all 0.1s ease;
+
+				&:hover {
+					color: #FFF;
+					background-color: $bg-primary;
+				}
+			}
+		}
+
+	}
+
+}

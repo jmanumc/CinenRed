@@ -1,0 +1,64 @@
+.slide-wrapper {
+	margin-bottom: 20px;
+
+	header {
+		padding: 20px;
+		color: #000;
+		background-color: rgba(0,0,0,0.1);
+	}
+
+	& > .slide {
+		padding: 20px 0px;
+		color: #FFF;
+		background-color: rgba(0,0,0,0.8);
+
+		article {
+			width: 100%;
+			margin-bottom: 20px;
+			margin-right: 0px;
+			display: block;
+			vertical-align: top;
+			text-align: center;
+
+			.poster{
+				padding:0px;
+
+				img {
+					width: 100px;
+					height: 150px;
+				}
+			}
+
+			.titulo{
+				margin-bottom: 10px;
+				font-size: 1.1em;
+			}
+
+			.btn-precio{
+				display: inline-block;
+				padding: 5px;
+				color: #FFF;
+				text-decoration: none;
+				background-color: $bg-primary;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.main .slide-wrapper > .slide article {
+
+		width: 20%;
+		display: inline-block;
+		margin-right: -4px;
+		padding: 0px 10px;
+
+		.titulo {
+			font-size: 0.9em;
+		}
+		.btn-precio {
+			font-size: 0.9em;
+		}
+
+	}
+}

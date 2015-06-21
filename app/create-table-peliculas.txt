@@ -1,0 +1,15 @@
+CREATE TABLE peliculas (
+ id INT NOT NULL AUTO_INCREMENT,
+ titulo varchar(50),
+ poster varchar(100),
+ precio varchar(10),
+ sinopsis varchar(400) null,
+ genero varchar(30) null,
+ director varchar(50) null,
+ escritor varchar(50) null,
+ reparto varchar(50) null,
+ duracion time,
+ ano year null,
+ calificacion int(5) null,
+ primary key(id)
+);

@@ -1,0 +1,65 @@
+// Extra Small
+body > header {
+
+	// Desing
+	position: fixed;
+	top: 0px;
+	left: $header-left-xs;
+	bottom: 0px;
+	width: $header-width-xs;
+	overflow-y: auto;
+
+	// Temp
+	z-index: 1000;
+
+	// Style
+	background-color: $header-background-color;
+	box-shadow: $header-box-shadow;
+
+	hr {
+		border-color: #ddd;
+		border-style: inset;
+		border-width: 1px;
+	}
+
+}
+
+// Small
+ @media screen and (min-width: 768px) {
+ 	
+	body > header {
+		width: $header-width-sm;
+
+		&:before {
+			width: 100% - $header-width-sm;
+		}
+	}
+
+ }
+
+// Middle
+@media screen and (min-width: 992px) {
+	
+	body > header {
+		width: $header-width-md;
+
+		&:before {
+			width: 100% - $header-width-md;
+		}
+	}
+
+}
+
+// Large
+@media screen and (min-width: 1200px) {
+	
+	body > header {
+		left: $header-left-lg;
+		width: $header-width-lg;
+	}
+
+}
+
+@import "header/close.scss";
+@import "header/logo.scss";
+@import "header/accordion.scss";

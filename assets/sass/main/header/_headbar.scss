@@ -1,0 +1,155 @@
+body > main > header > .headbar {
+	position: relative;
+	background-color: $bg-primary;
+
+	.carrito {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		display: block;
+
+		a {
+			display: inline-block;
+			vertical-align: bottom;
+			color: #FFF;
+			text-decoration: none;
+		}
+
+		.num-products {
+			display: inline-block;
+			padding: 5px 10px;
+			vertical-align: top;
+			border-radius: 20px;
+			font-weight: bold;
+			font-size: 0.8em;
+			color: #FFF;
+			background-color: #333;
+		}
+
+	}
+
+	.menu {
+		position: relative;
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+
+		li {
+			display: inline-block;
+
+			& > span {
+				cursor: pointer;
+				display: block;
+				padding: 20px;
+				font-size: 2em;
+				color: #FFF;
+			}
+
+			& > div {
+				position: absolute;
+				left: 0px;
+				display: none;
+				padding: 20px;
+				z-index: 999;
+				background-color: #F8555E;
+			}
+
+			.login-wrapper {
+				form {
+
+					label {
+						font-family: "Opensans Bold";
+						font-size: 0.9em;
+						color: #FFF;
+					}
+
+					input {
+						width: 300px;
+						display: block;
+						margin: 5px 0px;
+						padding: 10px;
+						border: none;
+						font-family: "Opensans Regular";
+						font-size: 0.8em;
+						color: #333;
+					}
+
+					input[type=submit] {
+						font-family: "Opensans Bold";
+						font-size: 0.9em;
+						color: #FFF;
+						background-color: rgba(0,0,0,0.0);
+					}
+
+				}
+
+				p {
+					font-family: "Opensans Regular";
+					font-size: 0.8em;
+					color: #FFF;
+
+					a {
+						font-family: "Opensans Regular";
+						color: #FFF;
+					}
+				}
+
+			}
+
+			.search-wrapper {
+				font-family: $font-opensans-regular;
+
+				form {
+					background-color: #FFF;
+
+					input[type=text] {
+						padding: 15px;
+						border: none;
+						color: #333;
+
+						&::-webkit-input-placeholder {
+						   color: #999;
+						}
+
+						&:-moz-placeholder { /* Firefox 18- */
+						   color: #999;  
+						}
+
+						&::-moz-placeholder {  /* Firefox 19+ */
+						   color: #999;  
+						}
+
+						&:-ms-input-placeholder {  
+						   color: #999;  
+						}
+					}
+					button[type=submit] {
+						padding: 15px 20px;
+						border: none;
+						color: #555;
+						background-color: rgba(0,0,0,0.0);
+					}
+				}
+			}
+
+		}
+
+		li.open {
+
+			& > span {
+				background-color: #F8555E;
+			}
+
+		}
+
+	}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+	body > main > header > .header > .headbar {
+		padding: 10px 20px;
+	}
+
+}
